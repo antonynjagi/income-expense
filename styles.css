@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.transaction-column,
+.summary-column {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 45%; /* Adjust as needed */
+    box-sizing: border-box;
+}
+
+.transaction-form label,
+.summary-totals label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.transaction-form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.transaction-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction-form button:hover {
+    background-color: #45a049;
+}
+
+/* Add different color to summary-totals */
+.summary-totals {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.summary-totals label {
+    margin-bottom: 5px;
+}
+
+/* Set different colors for the total labels in summary-totals */
+.summary-totals h2 {
+    color: #2c3e50;
+}
+
+/* Add some margin between summary-totals and transaction-form */
+.container {
+    margin-bottom: 20px;
+}
+/* styles.css */
+
+/* ... (previous styles) */
+
+#itemsDiv {
+    margin: 20px;
+}
+
+/* Style for table headers */
+#itemsDiv table th {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Style for alternating rows */
+#itemsDiv table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for table cells */
+#itemsDiv table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+/* .summary-column, */
+/* .transaction-column { */
+    /* display: flex; */
+    /* flex-direction: column; */
+/* } */
+.summary-totals {
+    margin-bottom: 10px;
+}

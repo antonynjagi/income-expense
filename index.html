@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income-Expense</title>
+      <link rel="icon" href="./assets/icon-192.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="manifest" href="./manifest.json">
+<script src="https://unpkg.com/dexie@3.0.2/dist/dexie.min.js"></script>
+    <script>
+        
+        if ('serviceWorker' in navigator) {
+    window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js");
+    });
+}
+
+    </script>
+   
+</head>
+<body>
+    <nav>
+        <p>Transactions</p>
+    </nav>
+
+    <div class="container">
+        <table>
+            <tr>
+                <td class="summary-column">
+                    <h2>Summary Totals</h2>
+                    <div class="summary-totals">
+                       
+                    </div>
+                </td>
+                <td class="transaction-column">
+                    <h2>New Transaction</h2>
+                    <div class="transaction-form">
+                        <form id="itemForm">
+                            <label>Date<input type="date" id="dateInput" required></label><br/>
+                            <label>Transaction<input type="text" id="transactionInput" required></label><br/>
+                            <label>Income<input type="number" id="incomeInput" ></label><br/>
+                            <label>Investment<input type="number" id="investmentInput"></label><br/>
+                            <label>Expense:<input type="number" id="expenseInput"></label><br/>
+                            <button type="submit" id="addItemButton">Add Transaction</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="itemsDiv">
+        <!-- Item display will be dynamically added here -->
+    </div>
+
+   
+
+    <script src="app.js"></script>
+</body>
+</html>
